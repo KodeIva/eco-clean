@@ -2,13 +2,10 @@
 
 
 .navbar { 
-    height: 90px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 1%;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,12 +14,57 @@
 
 .quote {
     display: flex; 
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(71, 181, 249);;
+}
+
+.number {
+    display: flex;
+    width: 160px;
+    margin-right: 2px;
+    height: auto;
+    align-items: center;
+    padding: 1px;
+    color: white;
+}
+
+.btn {
+    width: 180px;
+    margin: 0 3px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.number i {
+    padding: 1px;
+    font-size: 1.2rem;
+}
+
+
+.number:hover, .btn:hover {
+    font-weight: 600;
+    transition: .7s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-color: red;
+  }
+}
+
+
+
+.logo-menu {
+    background-color: yellowgreen;
 }
 
 .logo {
     font-family: "Winky Sans" ;
     font-size: 1.8rem;
-    color: var(--black);
     font-weight: 500;
 }
 
@@ -51,54 +93,12 @@
     color: rgb(71, 181, 249);
 }
 
-.menu li::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(10, 159, 252);
-    z-index: -1;
-    opacity: 0;
-    transition: ease-in-out;
-}
 
-.menu li:hover::after {
-    opacity: 1;
-}
 
-.nav_right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
-.number {
-    display: flex;
-    align-items: center;
-    border: 1px solid #0000001a;
-    padding: 1px;
-    border-radius: 30px;
-    gap: 8px;
-    position: relative;
-}
 
-.number_btn_wrap {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 10px 0px;
-    overflow: hidden;
-}
 
-.number i {
-    background-color: rgb(10, 159, 252) ;
-    padding: 1px;
-    font-size: 1.1rem;
-    border-radius: 50%;
-}
 
-.number_btn_wrap:hover span {
-    transform: translateY(-20px);
-}
+
+
+
