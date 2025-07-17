@@ -6,7 +6,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
@@ -50,22 +49,21 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 700px) {
-  body {
-    background-color: red;
-  }
-}
+
 
 
 
 .logo-menu {
     background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
     font-family: "Winky Sans" ;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .logo h2 a {
@@ -79,7 +77,6 @@
 
 .menu {
     display: flex;
-    gap: 20px;
 }
 
 .menu li {
@@ -94,7 +91,20 @@
 }
 
 
-
+@media screen and (max-width: 700px) {
+    body {
+      background-color: red;
+    }
+    .nav {
+        justify-content: space-between;
+    }
+    .menu {
+      display: none;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+  }
 
 
 
