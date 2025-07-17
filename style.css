@@ -91,6 +91,27 @@
 }
 
 
+.bars {
+  display: none;
+  color: rgb(71, 181, 249);
+  font-size: 1.3rem;
+  
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bars i:hover {
+    animation: roll 1s;
+}
+
+
 @media screen and (max-width: 700px) {
     body {
       background-color: red;
@@ -103,6 +124,9 @@
     }
     .logo {
         font-size: 1.1rem;
+    }
+    .bars {
+        display: block;
     }
   }
 
