@@ -10,3 +10,9 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     menu.classList.remove('open')
 })
+
+window.addEventListener('resize' , () => {
+    if(window.innerWidth > 700) {
+        menu.classList.remove('open')
+    }
+})
