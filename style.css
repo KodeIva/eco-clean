@@ -180,7 +180,6 @@
 /* H O M E */
 .woman {
     display: flex;
-    background-color: red;
     align-items: center; 
     justify-content: center; 
     width: 50%;
@@ -209,7 +208,6 @@ img {
     width: 50%;
     padding: 0 35px;
     color: gray;
-    background-color: pink;
 }
 
 .home-text h1 {
@@ -218,24 +216,38 @@ img {
     color: rgb(106, 105, 105);
 }
 
+.home-text p {
+    font-size: 18px;
+}
+
 .home-text button {
     width: 200px;
     height: 40px;
     background-color: rgb(71, 181, 249);
-    margin: 20px 0; 
-    border: 2px solid darkgray; 
+    margin: 25px 0; 
+    color: white;
+    border: 2px solid transparent !important;
     border-radius: 20px;
+    font-size: 15px;
 }
 
+.home-text button:hover {
+    background-color: white;
+    color:  rgb(71, 181, 249); ;
+    border: 2px solid rgb(71, 181, 249); 
+    transition: 0.9s;
+}
 
-
-@media screen and (max-width: 850px) {
-       .home-text h1 {
+@media screen and (max-width: 950px) {
+    .home-text h1 {
         margin: 10px 0;
-        font-size: 40px;
+        font-size: 35px;
     }
     img {
         width: 100%;
+    }
+    .home-text p {
+        font-size: 15px;
     }
     .home-text button {
         padding: 8px 20px; 
