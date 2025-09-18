@@ -153,6 +153,12 @@
     .nav {
         justify-content: space-between;
     }
+    .logo h2 {
+        font-size: 40px;
+    }
+    .bars {
+        font-size: 40px;
+    }
     .menu {
       display: none;
     }
@@ -172,22 +178,88 @@
 
 
 /* H O M E */
-img {
+.woman {
+    display: flex;
+    background-color: red;
+    align-items: center; 
+    justify-content: center; 
     width: 50%;
+
+}
+img {
+    width: 90%; 
+    border-radius: 20px;
+
 }
 
 .home  {
+    width: 100%;
+    height: auto ;
     display: flex;
     margin-top: 30px;
+    padding: 15px;
     background-color: aliceblue;
     justify-content: center;
     align-items: center;
     align-content: center;
+    gap: 8px;
+}
+
+.home-text {
+    width: 50%;
+    padding: 0 35px;
+    color: gray;
+    background-color: pink;
+}
+
+.home-text h1 {
+    margin: 10px 0;
+    font-size: 50px;
+    color: rgb(106, 105, 105);
+}
+
+.home-text button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(71, 181, 249);
+    margin: 20px 0; 
+    border: 2px solid darkgray; 
+    border-radius: 20px;
 }
 
 
+
+@media screen and (max-width: 850px) {
+       .home-text h1 {
+        margin: 10px 0;
+        font-size: 40px;
+    }
+    img {
+        width: 100%;
+    }
+    .home-text button {
+        padding: 8px 20px; 
+        margin: 10px 0; 
+        border: 2px solid darkgray; 
+        border-radius: 20px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .home {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .woman {
+        width: 95%;
+    }
+    img {
+        width: 100%;
+    }
+    .home-text {
+        width: 95%;
+        padding: 15px 10px;
+    }
+    .home-text h1 {
+       font-size: 30px;
     }
 }
