@@ -234,7 +234,7 @@ img {
 .home-text button:hover {
     background-color: white;
     color:  rgb(71, 181, 249); ;
-    border: 2px solid rgb(71, 181, 249); 
+    border: 2px solid rgb(71, 181, 249) !important; 
     transition: 0.9s;
 }
 
